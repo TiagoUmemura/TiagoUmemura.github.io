@@ -7,3 +7,15 @@
     color:  #474e5d;
     font-size: 35px;
 }
+
+.bg1 {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
