@@ -10,12 +10,23 @@
 
 .bg1 {
 	padding-top: 50px;
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 }
 
 .bg-2 {
-    background-color: #474e5d; /* Dark Blue */
+    background-color: #474e5d;
     color: #ffffff;
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+.jumbotron {
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 100px 25px;
+}
+
+.bg-3 {
+    background-color: #474e5d;
+    color: #ffffff;
 }
