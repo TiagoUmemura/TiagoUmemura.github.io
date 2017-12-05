@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset=utf-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pórticos - Empresa Júnior de Engenharia Civil</title>
+  <!-- Load Roboto font -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="firebaseserver.js"></script>
+
+  <!-- Load css styles -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+  <!--[if IE 7]>
+      <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+  <link rel="shortcut icon" href="images/ico/favicon.png">
+  <style type="text/css">
+    body,td,th {
+       font-family: Roboto, sans-serif;
+    }
+    body {
+      background-color: #D6D6D6;
+    }
+    a:hover {
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="#" class="brand">
+          <!-- Logo da empresa -->
+          <img src="images/logo.png" width="120" height="40" alt="Logo" />
+        </a>
+        <!-- Navigation button, visible on small resolution -->
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <i class="icon-menu"></i>
+        </button>
+        <!-- Main navigation -->
+        <div class="nav-collapse collapse pull-right">
+            <ul class="nav" id="top-navigation">
+                <li class="active"><a href="#home">Início</a></li>
+                <li><a href="#service">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <!-- End main navigation -->
+      </div>
+    </div>
+  </div>
+  <!-- Start home section -->
+  <div id="home">
+    <!-- Start cSlider -->
+    <div id="da-slider" class="da-slider">
+      <div class="triangle"></div>
+      <!-- mask elemet use for masking background image -->
+      <div class="mask"></div>
+      <!-- All slides centred in container element -->
+      <div class="container">
+        <!-- Start first slide -->
+        
+        
+      </div>
+    </div>
+  </div>
+  <!-- End home section -->
+  <!-- Service section start -->
+  <div class="section primary-section" id="service">
+    <div class="container">
+      <!-- Start title section -->
+      <div class="title">
+        <h1>O que fazemos</h1>
+        <!-- Section's title goes here -->
+        <p>
+          Preparar o aluno para que, com valores éticos e sociais, atinja a
+          sociedade e entre no mercado de trabalho. Difundir uma visão empresarial.
+        </p>
+        <!--Simple description for section goes here. -->
+      </div>
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="centered service">
+            <div class="circle-border zoom-in">
+              <img class="img-circle" src="images/servicos/iconearquitetonico.png" alt="service 1">
+            </div>
+            <h3>Projetos Arquitetônicos</h3>
+            <p style="display:none;">
+              Projeto arquitetônico é materialização da ideia, ou seja, é a determinação e
+              representação prévia, através de desenhos e textos, do espaço planejado. Todo projeto
+              deve ser feito de acordo com as normas da Associação Brasileira de Normas Técnicas
+              (ABNT) NBR 13.531 e ABNT NBR 13.532. O projeto arquitetônico é composto por estudo
+              preliminar, anteprojeto, planta de cobertura e planta situação.
+            </p>
+          </div>
+        </div>
+        <div class="span6">
+          <div class="centered service">
+            <div class="circle-border zoom-in">
+              <img class="img-circle" src="images/servicos/iconeeletrico.png" alt="service 2" />
+            </div>
+            <h3>Projetos Elétricos</h3>
+            <p style="display:none;">
+              Baseado na norma NBR 5410, que estabelece as condições mínimas e necessárias
+              para o bom funcionamento de uma instalação elétrica de baixa tensão, a PÓRTICOS
+              procura desenvolver projetos para gerar maior conforto e segurança. Através da norma,
+              desenvolvemos projetos residencial, comercial, dentre outros.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="centered service">
+            <div class="circle-border zoom-in">
+              <img class="img-circle" src="images/servicos/iconehidrossanitário.png" alt="service 3">
+            </div>
+            <h3>Projetos Hidrossanitários</h3>
+            <p style="display:none;">
+              Baseados na norma NBR 5626, que estabelece as condições para desenvolvimento
+              de projetos de instalações prediais águas frias, visamos maior conforto e comodidade para
+              nossos clientes através de nossos projetos. Também de acordo com a NBR 8160 e NBR
+              10844, projetamos sistemas de instalações de esgotos sanitários, prediais e instalações de
+              águas pluviais.
+            </p>
+          </div>
+        </div>
+
+        <div class="span6">
+          <div class="centered service">
+            <div class="circle-border zoom-in">
+              <img class="img-circle" src="images/servicos/iconerenderização.png" alt="service 4">
+            </div>
+            <h3>Humanização de Plantas e Renderização</h3>
+            <p style="display:none;">
+              Através deste tipo de processo é possível obter a modelagem computacional do
+              produto final de um projeto. Nesses trabalhos, há uma preocupação artística com o
+              resultado obtido. Assim, alguns elementos como cores, sombras, texturas e iluminação são
+              estudados para estarem em harmonia no modelo. Para a realização desse tipo de
+              modelagem, é fundamental o domínio de softwares como CorelDRAW e SketchUp.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="centered service">
+            <div class="circle-border zoom-in">
+              <img class="img-circle" src="images/servicos/consultoria.png" alt="service 5">
+            </div>
+            <h3>Consultoria</h3>
+            <p style="display:none;">
+              Baseados na norma NBR 5626, que estabelece as condições para desenvolvimento
+              de projetos de instalações prediais águas frias, visamos maior conforto e comodidade para
+              nossos clientes através de nossos projetos. Também de acordo com a NBR 8160 e NBR
+              10844, projetamos sistemas de instalações de esgotos sanitários, prediais e instalações de
+              águas pluviais.
+            </p>
+          </div>
+        </div>
+
+        <div class="span6">
+          <div class="centered service">
+            <div class="circle-border zoom-in">
+              <img class="img-circle" src="images/servicos/prevencao.png" alt="service 6">
+            </div>
+            <h3>Prevenção</h3>
+            <p style="display:none;">
+              Através deste tipo de processo é possível obter a modelagem computacional do
+              produto final de um projeto. Nesses trabalhos, há uma preocupação artística com o
+              resultado obtido. Assim, alguns elementos como cores, sombras, texturas e iluminação são
+              estudados para estarem em harmonia no modelo. Para a realização desse tipo de
+              modelagem, é fundamental o domínio de softwares como CorelDRAW e SketchUp.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Service section end -->
+  <!-- Portfolio section start -->
+  <div class="section secondary-section " id="portfolio">
+    <div class="triangle"></div>
+    <div class="container">
+      <div class=" title">
+        <h1>Você viu nossas obras?</h1>
+      </div>
+      <!-- Start details for portfolio project 1 -->
+      <div id="single-project1">
+        <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/ColegioEstadual/Colegio Estadual 2.png" alt="project 1" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto para o Colégio Estadual de Campo Mourão</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span><p>Foi desenvolvido um projeto de captação de águas pluviais para a irrigação de uma horta, situada em um Colégio Estadual na cidade de Campo Mourão, como também um orçamento para a viabilização do mesmo. Este projeto teve como objetivo reduzir o custo para a irrigação e manutenção da horta, de maneira sustentável. A disposição da quadra de esporte do imóvel foi refeita no AutoCad para a alocação do desenho dos sistemas que captariam a água pluvial. O projeto foi desenvolvido e entregue pela Pórticos em agosto de 2013. </p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>14/08/2013</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 1 -->
+
+      <!-- Start details for portfolio project 2 -->
+      <div id="single-project2">
+        <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/Irmas Carmelitas/400x400/1q.png" alt="project 2" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto para as instalações das Irmãs Carmelitas</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span><p>O Projeto das Irmãs Carmelitas veio até a Pórticos com o objetivo de desenvolver um projeto arquitetônico em uma comunidade religiosa, localizada na cidade de Campo Mourão. A necessidade do cliente era de ampliar o espaço físico do local para a confecção de hóstias e a construção de um ateliê para as residentes da comunidade. A elaboração e a finalização do projeto foram em novembro de 2013.</p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>22/11/2013</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 2 -->
+
+      <!-- Start details for portfolio project 3 -->
+      <div id="single-project3">
+        <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/Casali/Casali2.png" alt="project 3" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto Casali/Campusmourão Construção LTDA</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span><p>Nesta tarefa foi feita a realização do projeto arquitetônico de todas as construções já existentes dentro dos limites da Pedreira Casali: Empresas Campusmourão e Concrecampus. Para isso, inicialmente foi realizada a medição de todos os empreendimentos existentes, bem como demarcação de equipamentos elétricos. Assim, foi possível trabalhar na elaboração de plantas baixas dos empreendimentos medidos, bem como na alocação dos maquinários elétricos dimensionados. A entrega dos projetos foi feita em março de 2015.</p>
+                </div>
+                <div>
+                  <span>Depoimento do Cliente</span><p>“Registro aqui nossa satisfação quanto ao atendimento recebido pela Pórticos à Campusmourão Construção Ltda (Pedreira Casali), desde os primeiros contatos para orçamento até a entrega dos serviços finalizados, não medindo esforços para todas as etapas e particularidades do contrato. Em nome do Presidente Cristiano Sanchez Jr, estendo o cumprimento a toda equipe que esteve empenhada no projeto. Parabéns pelo compromisso assumido e pela maneira de se relacionar com total preocupação ao cliente.” Ralph Wagner Marek</p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>30/03/2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 3 -->
+
+      <ul id="portfolio-grid" class="thumbnails row">
+        <li class="span4 mix web">
+          <div class="thumbnail">
+            <img src="images/projetos/ColegioEstadual/Colegio Estadual 2.png" alt="project 1">
+            <a href="#single-project1" class="more show_hide" rel="#slidingDiv1">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Colégio Estadual de Campo Mourão</h3>
+              <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+        <li class="span4 mix photo">
+          <div class="thumbnail">
+            <img src="images/projetos/Irmas Carmelitas/400x400/1q.png" alt="project 2">
+            <a href="#single-project2" class="show_hide more" rel="#slidingDiv2">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Irmãs Carmelitas</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+        <li class="span4 mix identity">
+          <div class="thumbnail">
+            <img src="images/projetos/Casali/Casali2.png" alt="project 3">
+            <a href="#single-project3" class="more show_hide" rel="#slidingDiv3">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Casali/Campusmourão</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Start details for portfolio project 4 -->
+      <div id="single-project4">
+        <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/Salao Comunitario/Salao Comunitario 3.png" alt="project 4" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto Salão Comunitário</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span><p>A empresa ficou responsável em desenvolver os projetos arquitetônicos, de instalações elétricas e hidrossanitárias de um espaço de lazer localizado no bairro Jardim Nossa Senhora Aparecida, na cidade de Campo Mourão. No espaço cedido, o cliente sentia a necessidade de ter uma horta, um espaço aberto e outro fechado destinado à comunidade. Os projetos foram desenvolvidos no mês de novembro e a entrega em dezembro de 2013.</p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>16/12/2013</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 4 -->
+
+      <!-- Start details for portfolio project 5 -->
+      <div id="single-project5">
+        <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/Rotary/400x400/1q.png" alt="project 5" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto para o Rotary de Campo Mourão</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span><p>A empresa ficou responsável pela elaboração dos projetos arquitetônico e hidrossanitário de uma edícula para o Rotary Club, levando em consideração o melhor aproveitamento do espaço disponível. O projeto teve início no mês de julho e foi entregue no mês de setembro do ano de 2013.</p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>13/09/2013</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 5 -->
+
+      <!-- Start details for portfolio project 6 -->
+      <div id="single-project7">
+        <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/TATO/TATO 2.png" alt="project 7" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto TATO</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span><p>O projeto TATO (Tecnologia Assistiva em Terapia Ocupacional),
+                    desenvolvido pela terapeuta ocupacional Laísa Sarubo, chegou até a Pórticos como um projeto de extensão,
+                    juntamente com o PET (Programa de Educação Tutorial), contando com a orientação do
+                    Professor Dr Jeferson Rafael e do Professor Dr Jorge Góes. Este projeto tem como objetivo desenvolver
+                    instrumentos que auxiliam crianças com algum tipo de deficiência nas suas ações básicas do dia-a-dia através de
+                    materiais de baixo custo como o PVC que apresentassem alta resistência quando finalizados. O primeiro projeto
+                    realizado foi um andador em material de PVC utilizando tubos de conexões de água fria. Já o segundo projeto
+                    elaborado foi uma cadeirinha para banho e momentos de recreação feito com tubos de esgoto. O terceiro projeto também
+                    já foi concluído e buscamos continuar com essa ação por tempo indeterminado como uma obra social que beneficie crianças
+                    que precisam desse apoio. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 6 -->
+
+      <ul id="portfolio-grid2" class="thumbnails row">
+        <li class="span4 mix web">
+          <div class="thumbnail">
+            <img src="images/projetos/Salao Comunitario/Salao Comunitario 3.png" alt="project 4">
+            <a href="#single-project4" class="show_hide more" rel="#slidingDiv4">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Salão Comunitário</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+        <li class="span4 mix photo">
+          <div class="thumbnail">
+            <img src="images/projetos/Rotary/400x400/1q.png" alt="project 5">
+            <a href="#single-project5" class="show_hide more" rel="#slidingDiv5">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Rotary de Campo Mourão</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+        <ul id="portfolio-grid3" class="thumbnails row">
+          <li class="span4 mix photo">
+            <div class="thumbnail">
+              <img src="images/projetos/TATO/TATO 2.png" alt="project 7">
+              <a href="#single-project7" class="show_hide more" rel="#slidingDiv7">
+                <i class="icon-plus"></i>
+              </a>
+              <h3>TATO</h3>
+              <!--<p>Thumbnail caption...</p>-->
+              <div class="mask"></div>
+            </div>
+          </li>
+      </ul>
+
+      <!-- Start details for portfolio project 9 -->
+      <div id="single-project9">
+        <div id="slidingDiv9" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/AcademiaSocial/AcademiaSocial2.png" alt="project 9" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto da Academia Social</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span><p>Este trabalho consistiu no desenvolvimento do projeto arquitetônico de uma academia social para o residencial Cidade Alta. Este projeto deveria priorizar as áreas de lazer, saúde e recreação que atendesse os moradores. Os membros se basearam em academias ao ar livre, para isso, tiveram que retirar medidas de equipamentos e também estudar a disposição destes aparelhos de maneira minuciosa. Feito isso, desenvolveu-se a projeção dos aparelhos em um software.</p>
+                </div>
+                <div>
+                  <span>Depoimento do Cliente</span><p>"Gosto do dinamismo e participação da Pórticos em projetos sociais de nossa cidade. Sugiro que deem continuidade a este projeto estendendo-o as turmas futuras". Nelita Piacentini</p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>22/06/2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 9 -->
+
+
+
+        <li class="span4 mix photo">
+          <div class="thumbnail">
+            <img src="images/projetos/AcademiaSocial/AcademiaSocial2.png" alt="project 9">
+            <a href="#single-project9" class="show_hide more" rel="#slidingDiv9">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Academia Social</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+        <li class="span4 mix photo">
+          <div class="thumbnail">
+            <img src="images/projetos/Condominio de Chacaras/400x400/chacarasq.png" alt="project 10">
+            <a href="#single-project10" class="show_hide more" rel="#slidingDiv10">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Condomínio de Chácaras</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+        <li class="span4 mix photo">
+          <div class="thumbnail">
+            <img src="images/projetos/TelasJort/400x400/1q.png" alt="project 11">
+            <a href="#single-project11" class="show_hide more" rel="#slidingDiv11">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>TelasJort</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Start details for portfolio project 10 -->
+      <div id="single-project10">
+        <div id="slidingDiv10" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/Condominio de Chacaras/400x400/chacarasq.png" alt="project 10" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto Condomínio de Chácaras</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span>
+                  <p>
+                    Neste projeto, a equipe ficou responsável pela representação gráfica de
+                    um terreno apresentado pelo cliente. Para isso, foi elaborada uma planta
+                    humanizada de todo o terreno loteado com modelos de chácaras. Foi produzido,
+                    também, modelos em 3D de um lago e da entrada da chácara. Com isso, foi preparado
+                    um banner e um portfólio de vendas para o cliente.
+                  </p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>10/12/2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 10 -->
+
+      <!-- Start details for portfolio project 11 -->
+      <div id="single-project11">
+        <div id="slidingDiv11" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/TelasJort/400x400/1q.png" alt="project 11" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto Alambrados TelasJort</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span>
+                  <p>
+                    Trata-se de um projeto de modelagem
+                    para visualização 3D de alambrados da empresa TelasJort inseridos em um
+                    ambiente com silos. Para isso, além da modelagem dos alambrados, os
+                    membros trabalharam com texturização de elementos como céu, ambientes e
+                    vegetação, além escolha de ângulos para obter um resultado final mais próximo
+                    do real. Neste trabalho a equipe fez uso do software SketchUp.
+                  </p>
+                </div>
+                <div>
+                  <span>Data de Finalização</span><p>14/03/2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 11 -->
+
+      <!-- Start details for portfolio project 12 -->
+      <div id="single-project12">
+        <div id="slidingDiv12" class="toggleDiv row-fluid single-project">
+          <div class="span6">
+            <img src="images/projetos/Costruindo Sorrisos/400x400/2q.png" alt="project 12" />
+          </div>
+          <div class="span6">
+            <div class="project-description">
+              <div class="project-title clearfix">
+                <h3>Projeto Construindo Sorrisos</h3>
+                <span class="show_hide close">
+                  <i class="icon-cancel"></i>
+                </span>
+              </div>
+              <div class="project-info">
+                <div>
+                  <span>Descrição</span>
+                  <p>
+                    É um projeto de cunho social desenvolvido para
+                    a comemoração do dia das crianças em que os membros se empenham em
+                    realizar ações para crianças carentes do município de Campo Mourão.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End details for portfolio project 12 -->
+
+      <ul id="portfolio-grid4" class="thumbnails row">
+        <li class="span4 mix photo">
+          <div class="thumbnail">
+            <img src="images/projetos/Costruindo Sorrisos/400x400/2q.png" alt="project 12">
+            <a href="#single-project12" class="show_hide more" rel="#slidingDiv12">
+              <i class="icon-plus"></i>
+            </a>
+            <h3>Construindo Sorrisos</h3>
+            <!--<p>Thumbnail caption...</p>-->
+            <div class="mask"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Portfolio section end -->
+
+  <!-- About us section start -->
+  <div class="section primary-section" id="about">
+    <div class="triangle"></div>
+    <div class="container">
+      <div class="title">
+        <h1>Sobre</h1>
+        
+      </div>
+      <!-- Member photos -->
+      <div class="row-fluid team">
+
+	
+      </div>
+    </div>
+  </div>
+  <!-- About us section end --><!-- Client section start -->
+  <!-- Client section start -->
+  <div class="triangle"></div>
+  <!-- Price section start --><!-- Price section end -->
+  <!-- Newsletter section start --><!-- Newsletter section end -->
+  <!-- Contact section start -->
+  <div id="contact" class="contact">
+    <div class="section secondary-section">
+
+      <div class="container">
+        <div class="title">
+          <h1>Contato</h1>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div>
+          <div class="span6 center-contact contact-info">
+            <form method="POST" action="http://formspree.io/umemuratiago@gmail.com">
+              <input type="text" id="email" name="email" placeholder="Seu email" class="row-fluid">
+              <input type="text" id="subject" name="subject" placeholder="Assunto" class="row-fluid">
+              <textarea type="text" id="message" name="message" placeholder="Mensagem" rows="4" class="row-fluid">
+              </textarea> 
+
+              <button type="submit">Enviar</button> 
+            </form>
+
+            <p>Vila Rosalina Maria dos Santos, 1233, 87301-899, Campo Mourão, Paraná.</p>
+            <p>porticos.contato@gmail.com</p>
+            <p>(44) 3518-1531</p>
+            <div class="title">
+                <h3>Seu futuro está em nossos projetos</h3>
+            </div>
+            <div class="row-fluid centered">
+              <ul class="social">
+                <li>
+                  <a href="https://www.facebook.com/porticosej" target="_blank">
+                      <span class="icon-facebook-circled"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrapper span6">
+          <div class="map-canvas" id="map-canvas">Loading map...</div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+  <!-- Contact section edn -->
+  <!-- Footer section start -->
+  <div class="footer">
+    <p>&copy; 2015 Haken - Empresa Júnior de Ciência da Computação</p>
+  </div>
+  <!-- Footer section end -->
+  <!-- ScrollUp button start -->
+  <div class="scrollup">
+    <a href="#">
+      <i class="icon-up-open"></i>
+    </a>
+  </div>
+  <!-- ScrollUp button end -->
+  <!-- Include javascript -->
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jquery.cslider.js"></script>
+  <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+  <script type="text/javascript" src="js/jquery.inview.js"></script>
+  <!-- Load google maps api and call initializeMap function defined in app.js -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-kWgbuv7OnE164S6qDrnGnXFdQOASxu0&callback=initializeMap" type="text/javascript"></script>
+  <!-- css3-mediaqueries.js for IE8 or older -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="/__/firebase/3.9.0/firebase-app.js"></script>
+  <script src="/__/firebase/3.9.0/firebase-auth.js"></script>
+  <script src="/__/firebase/3.9.0/firebase-database.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+  <script type="text/javascript">
+    
+  var acc = document.getElementsByClassName("service");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          //this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.childNodes;
+          console.log(panel.length);
+          if (panel[5].style.display === "block") {
+              panel[5].style.display = "none";
+          } else {
+              panel[5].style.display = "block";
+          }
+      }
+  }
+
+  $('#emailForm').submit(function(e) {
+  var name = document.getElementById('email'),
+    email = document.getElementById('subject'),
+    message = document.getElementById('message')
+  
+    if(!name.value || !email.value || !message.value) {
+      alert('Por Favor preencha todos os campos');
+    }else {
+      $.ajax({
+        url: "https://formspree.io/umemuratiago@gmail.com", 
+        method: "POST",
+        data: $(this).serialize(),
+        dataType: "json"
+      });
+      alert("E-mail enviado");
+    }
+    
+    
+    return false;
+  }); 
+
+  </script>
+
+</body>
+</html>
