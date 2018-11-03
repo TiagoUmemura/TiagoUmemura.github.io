@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+        Game Server Sample
+    </title>
+</head>
+<body>
+    <div class="parallax">
+    </div>
+    <!-- FIXED NAVBAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    Game Center
+                </div>
+            </div>
+            <!-- form de login -->
+            <form class="navbar-form navbar-left" id="form-login">
+                <div class="form-group">
+                    <input class="form-control" id="usrnm" placeholder="Username" type="text">
+                        <input class="form-control" id="pswrd" placeholder="Password" type="password">
+                        </input>
+                    </input>
+                </div>
+                <button class="btn btn-primary" id="form-login-button" type="button">
+                    <span class="glyphicon glyphicon-log-in">
+                    </span>
+                    Login
+                </button>
+            </form>
+            <!-- informacao apos o login -->
+            <div class="nav navbar-nav" id="label-logged-in" style="display: none">
+                <p class="navbar-text">
+                    Logged in as
+                    <strong>
+                        John Doe
+                    </strong>
+                </p>
+                <form class="navbar-form navbar-left" style="display: none">
+                    <button class="btn btn-primary" data-target="#modalProfile" data-toggle="modal" id="button-profile" type="button">
+                        <span class="glyphicon glyphicon-modal-window">
+                        </span>
+                        View Profile
+                    </button>
+                </form>
+            </div>
+            <!-- status da conexao com game server -->
+            <div class="nav navbar-nav navbar-right" id="status-con">
+                <p class="navbar-text">
+                    Status:
+                </p>
+                <h4 class="navbar-text">
+                    <span class="label label-danger">
+                        OFFLINE
+                    </span>
+                </h4>
+            </div>
+        </div>
+    </nav>
+    <!-- MODAL: PROFILE -->
+    <div class="modal fade" id="modalProfile" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal-content-id">
+                <div class="modal-header" id="modal-header-id">
+                    <button class="close" data-dismiss="modal" type="button">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="name-profile-modal">
+                        John Doe Profile
+                    </h4>
+                </div>
+                <!-- lista de itens do profile -->
+                <ul class="modal-body list-group">
+                    <li class="list-group-item justify-content-between">
+                        Gamer Points (XP)
+                        <span class="badge badge-default badge-pill">
+                            220
+                        </span>
+                    </li>
+                    <li class="list-group-item justify-content-between">
+                        Gamer Points (XP)
+                        <span class="badge badge-default badge-pill">
+                            220
+                        </span>
+                    </li>
+                </ul>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" type="button">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BODY -->
+    <div class="container">
+        <!-- Phaser Game -->
+        <div class="center" id="game-container">
+        </div>
+        <!-- Panel Trophies -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    Trophies
+                </h3>
+                <small>
+                    List of unlocked trophies
+                </small>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group" id="div-trophy">
+                    <p id="trophies-list-empty-label">
+                        There are no trophies.
+                    </p>
+                </ul>
+            </div>
+        </div>
+        <!-- Panel Screenshots -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    Screenshots
+                </h3>
+                <small>
+                    Use
+                    <kbd>
+                        P
+                    </kbd>
+                    to capture the game screen
+                </small>
+            </div>
+            <div class="panel-body">
+                <div id="div-screenshot">
+                    <p id="screenshots-empty-label">
+                        There are no screenshots.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TEMPLATES -->
+    <script id="template-profile-item" type="type/x-handlebars-template">
+        <li class='list-group-item justify-content-between'>
+    {{description}}
+    <span class='badge badge-default badge-pill'>{{value}}</span>
+  </li>
+    </script>
+    <script id="template-trophies-list-item" type="type/x-handlebars-template">
+        <li class='list-group-item list-group-item-action flex-column align-items-start'>
+    <h5 class='mb-1'>
+      <strong>{{title}}</strong>
+      <small>{{xp}}xp</small>
+    </h5>
+    <p class='mb-1'>{{description}}</p>
+    <small><kbd>{{name}}</kbd></small>
+  </li>
+    </script>
+    <!-- INCLUDES DAS LIBS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+            <script src="js/lib/phaser.js">
+            </script>
+            <script src="js/lib/jquery-3.2.0.js">
+            </script>
+            <script src="bootstrap-3.3.7-dist/js/bootstrap.js">
+            </script>
+            <script src="js/lib/handlebars-v4.0.10.js">
+            </script>
+            <script src="js/controller.js">
+            </script>
+            <!-- INCLUDES DO JOGO -->
+            <script src="js/game.js">
+            </script>
+            <script src="js/screens.js">
+            </script>
+            <script src="js/player.js">
+            </script>
+            <script src="js/checkpoint.js">
+            </script>
+            <script src="js/gem.js">
+            </script>
+            <script src="js/end.js">
+            </script>
+            <script src="js/ghost.js">
+            </script>
+            <script src="js/bug.js">
+            </script>
+            <script src="js/fly.js">
+            </script>
+            <script src="js/gamecenter.js">
+            </script>
+        </link>
+    </link>
+</body>
